@@ -7,6 +7,8 @@
 body {     
     background: rgb(208,235,226);
     background: linear-gradient(106deg, rgba(208,235,226,1) 18%, rgba(144,187,174,1) 36%, rgba(173,214,201,1) 59%, rgba(159,194,185,1) 85%);
+   
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* homepage */
@@ -141,7 +143,7 @@ li {
 /** animations **/
 
 .typed-out {
-    width: 14.5ch;
+    width: 10em;
     animation: typing 2.2s steps(23), blink .6s step-end infinite;
     border-right: 2px solid var(--black);
     white-space: nowrap;
