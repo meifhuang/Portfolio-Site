@@ -7,8 +7,7 @@
 body {     
     background: rgb(208,235,226);
     background: linear-gradient(106deg, rgba(208,235,226,1) 18%, rgba(144,187,174,1) 36%, rgba(173,214,201,1) 59%, rgba(159,194,185,1) 85%);
-   
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* homepage */
@@ -41,10 +40,12 @@ li {
     font-size: 15px;
 }
 
+
 .nav-items {
     text-decoration: none; 
     color: var(--black);
-    font-weight: 600;
+    font-weight: 300;
+    margin-right: 1em;
 }
 
 .nav-items:hover {
@@ -53,13 +54,12 @@ li {
     cursor: pointer;
 }
 
-.nav-items:target {
+.nav-items.active {
     color: var(--white);
 }
 
 .right-nav {
     min-width: 8em;
-
 }
 
 /* LOGO */
@@ -69,7 +69,7 @@ li {
     margin-top: .3em;
     font-size: 2em;
     font-weight: 600;
-    border: 1px solid var(--black);
+    border: 1.5px solid var(--black);
     width: 1.5em;
     height: 1.4em;
     padding: .5em;
@@ -88,11 +88,20 @@ li {
     color: var(--white);
 }
 
+/* if the screen size gets small, just disappear */
+@media (max-width: 912px) {
+    .right-nav {
+        display:none; 
+    }
+    .skills-title {
+        font-size: 2em;
+    }
+}
 /* icons */
 /*** DO THE NAV BAR TO THE BOTTOM ***/ 
 
 .icon-line {
-    height: 9em;
+    height: 7em;
     width: .75em;
     border-right: 2px solid var(--black);
 }
@@ -126,9 +135,16 @@ li {
 .proj-images > img {
     height: 100%;
     width: 100%;
+   
+}
+
+.project-title {
+    animation: increaseSize 10s;
 }
    
 /* skills */
+
+
 
 .skills {
     margin-top: 4em;
@@ -136,6 +152,25 @@ li {
     /* border: 3px solid black; */
 }
 
+.increaseSize {
+    animation: increaseSize 2s;
+}
+
+.box {
+    background-color: var(--white);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1em;
+    opacity: .3; 
+    transition: 0.3s; 
+    perspective: 1000px;
+}
+
+.box:hover {
+    opacity: 1;
+    transform: scale(1.01);
+    animation: fadeIn 1.5s;
+}
 
 /** animations **/
 
@@ -151,7 +186,7 @@ li {
 
 @keyframes typing {
     from { 
-        width:0 
+        width: 0 
     } 
 }
 
@@ -160,3 +195,12 @@ li {
         border-color: transparent; 
     }
 }
+
+  @keyframes increaseSize {
+    0% {
+        font-size: 1em;
+    }
+    100% {
+        font-size: em;
+    }
+  }

@@ -18,11 +18,7 @@
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Julius+Sans+One&family=Open+Sans:wght@300&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Julius+Sans+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <title>Mei Huang</title>
 </head>
@@ -30,7 +26,8 @@
 <body>
     <nav class="navbar sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"> MH <div class="navbox"></div></a>
+            <a class=" navbar-brand" href=""> MH <div class="navbox">
+                </div></a>
 
 
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,15 +53,15 @@
 
     <div class="container">
         <div class="home-line offset-10"> </div>
-        <div class="d-flex min-vh-100 justify-content-center flex-column mb-5 home offset-1" id="home">
+        <div class="d-flex min-vh-100 justify-content-center flex-column mb-5 home offset-1 sections" id="home">
             <h2> Hi, my name is </h2>
-            <h1 class="name"> Mei Huang. </h1>
+            <h1 class=" name"> Mei Huang. </h1>
             <div class="typing-container">
                 <h2 class="typed-out"> I'm a web developer. </h2>
             </div>
         </div>
 
-        <h2 class="offset-5 mb-5" id="project"> check out some of my work </h2>
+        <h2 class="offset-4 sections project-title" id="project"> check out my recent projects </h2>
         <div class="row project d-flex align-items-center justify-content-evenly col-12 mx-3 mb-5">
             <div class="proj-images col-lg-5 col-sm-10 border-0">
                 <img class="mb-5"
@@ -114,7 +111,7 @@
                     <a href="/"> Repository </a>
                 </div>
             </div>
-            <div class="proj-images col-lg-5 col-sm-10 border-0">
+            <div class="proj-images col-lg-5 col-sm-10  border-0">
                 <img class="mb-5"
                     src="https://images.unsplash.com/photo-1595981234058-a9302fb97229?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80g"
                     alt="">
@@ -149,40 +146,21 @@
 
         </div>
 
-
-        <!-- <div class=" proj-images col-7">
-                        <img src="/images/locallibrary.jpg" alt="">
-                </div>
-                <div class="col-3 proj d-flex flex-column justify-content-evenly">
-                    <h3 class="text-center proj-title"> Local Library </h3>
-                    <div class="proj-dets mb-5">
-                        <p class="m-1"> Lribus inventore debitis voluptas minima cumque aliquam sunt necessitatibus modi
-                            corporis! Sed, ratione quasi, porro nostrum eveniet voluptatem officiis quibusdam dolor
-                            totam, reprehenderit facere. Doloremque voluptatum aliquam et eveniet?</p>
-                    </div>
-                    <div class="proj-links align-self-end">
-                        <a href="https://github.com/"> Live Page </a>
-                        <br>
-                        <a href=""> Repository </a>
-                    </div>
-                </div>
-            </div> -->
-
-        <div class="col-10 d-flex justify-content-center align-items-center offset-1 skills mb-5" id="skills">
-            <h2> built with </h2>
+        <div class="col-10 d-flex sections justify-content-center align-items-center offset-1 skills mb-5" id="skills">
+            <h2 class="text-end skills-title"> created with </h2>
             <div class="row m-5">
-                <img class="col-3 mb-3 mx-auto" src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="">
-                <img class="col-3 mb-3 mx-auto" src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="">
-                <img class="col-3 mb-3 mx-auto" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="">
-                <img class="col-3 mb-3 mx-auto" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="">
-                <img class="col-6 mx-auto" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="">
-                <img class="col-6 mx-auto "
+                <img class="col-3 mb-2 box" src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="">
+                <img class="col-3 mb-2 box" src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="">
+                <img class="col-3 mb-2 box" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="">
+                <img class="col-3 mb-2 box" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="">
+                <img class="col-6 mb-2 box" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="">
+                <img class="col-6 mb-2 box"
                     src="https://storage-us-gcs.bfldr.com/85s8xk2j3k89b67xr8c7vwmv/v/1069931049/original/MongoDB_ForestGreen.png?Expires=1676612283&KeyName=gcs-bfldr-prod&Signature=v1bFZDZPfhMO3-StcUxbJIVVDBc="
                     alt="">
             </div>
         </div>
-        <div class="contact mt-5 mb-5 col-6 offset-3" id="contact">
-            <h2 class="text-center"> connect with me </h2>
+        <div class="contact col-6 offset-3 ">
+            <h2 class="text-center mb-5 sections" id="contact"> connect with me </h2>
             <form>
                 <div class="form-group m-3">
                     <label for="name">Name</label>
@@ -202,11 +180,11 @@
         </div>
 
     </div>
-    <div class="sticky-bottom d-flex">
+    <div class="sticky-bottom d-flex justify-content-between">
         <ul class="left-nav">
             <div class="icon-line"> </div>
-            <li> <a href="#contact"> <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png"
-                        alt="n/a"> </a> </li>
+            <li> <a href=""> <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="n/a">
+                </a> </li>
             <li> <a href="https://www.linkedin.com/in/meifhuang5/"> <img class="icons"
                         src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="n/a"> </a> </li>
             <li> <a href="https://github.com/meifhuang"> <img class="icons"
@@ -214,15 +192,18 @@
                 </a> </li>
         </ul>
         <!-- <div class="sticky-bottom text-end offset-10"> -->
-        <ul class="right-nav text-end align-self-end offset-10">
-            <li> <a class="nav-items" href="#home"> Home </a> </li>
+        <ul class="right-nav text-end align-self-end ">
+            <li> <a class="nav-items" href="#home"> &lt;/Home&gt; </a> </li>
             <li> <a class="nav-items" href="#project"> Projects </a></li>
             <li> <a class="nav-items" href="#skills"> Skills </a></li>
             <li> <a class="nav-items" href="#contact"> Contact </a></li>
+
         </ul>
+
     </div>
     </div>
 
 </body>
+<script src="app.js"> </script>
 
 </html>
