@@ -96,6 +96,10 @@ li {
     .skills-title {
         font-size: 2em;
     }
+    .projects-title {
+        font-size: 2em;
+    }
+
 }
 /* icons */
 /*** DO THE NAV BAR TO THE BOTTOM ***/ 
@@ -135,35 +139,25 @@ li {
 .proj-images > img {
     height: 100%;
     width: 100%;
-   
 }
-
 .project-title {
-    animation: increaseSize 10s;
+    margin-right: 1em;
 }
-   
+
 /* skills */
-
-
 
 .skills {
     margin-top: 4em;
     height: 38em;
-    /* border: 3px solid black; */
+    /* border: 2px solid black; */
 }
-
-.increaseSize {
-    animation: increaseSize 2s;
-}
-
 .box {
     background-color: var(--white);
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 8px;
     padding: 1em;
     opacity: .3; 
-    transition: 0.3s; 
-    perspective: 1000px;
+    transition: 0.1s; 
 }
 
 .box:hover {
