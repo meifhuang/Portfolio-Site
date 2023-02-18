@@ -127,9 +127,12 @@ li {
 
 .proj-images {
     height: auto;
-    box-shadow: -1px 1px 26px 11px rgba(115,105,105,0.56);
-    -webkit-box-shadow: -1px 1px 26px 11px rgba(115,105,105,0.56);
-    -moz-box-shadow: -1px 1px 26px 11px rgba(115,105,105,0.56);
+    box-shadow: 1px 10px 40px 3px rgba(69,89,69,0.75);
+-webkit-box-shadow: 1px 10px 40px 3px rgba(69,89,69,0.75);
+-moz-box-shadow: 1px 10px 40px 3px rgba(69,89,69,0.75);
+    /* box-shadow: -1px 4px 26px 11px rgba(115,105,105,0.56);
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(115,105,105,0.56);
+    -moz-box-shadow: -1px 4px 26px 11px rgba(115,105,105,0.56); */
     margin-bottom: 2em;
     background-color: var(--white);
     padding: 1em !important;
@@ -147,8 +150,9 @@ li {
 /* skills */
 
 .skills {
-    margin-top: 4em;
-    height: 38em;
+    margin-top: 5em;
+    margin-bottom: 7em; 
+    height: 40em;
     /* border: 2px solid black; */
 }
 .box {
@@ -167,6 +171,15 @@ li {
 }
 
 /** animations **/
+
+
+/* contacts me */
+
+.contact {
+    margin-top: 8em;
+    margin-bottom: 6em;
+}
+
 
 .typed-out {
     width: 10em;
