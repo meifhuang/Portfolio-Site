@@ -1,3 +1,5 @@
+
+
 const sections = document.querySelectorAll(".sections");
 
 window.addEventListener("scroll", () => {
@@ -20,3 +22,21 @@ window.addEventListener("scroll", () => {
     let content = currentLink.textContent;
     currentLink.textContent = '</' + content + '>'
 })
+
+const imgproj = document.querySelectorAll(".img-proj");
+const imgvidArray = document.querySelectorAll(".imgvid");
+
+
+for (let i = 0; i < 4; i++) {
+    const imgvid = imgvidArray[i]; 
+    const card_img = imgproj[i] 
+    const video = document.createElement('video');
+    imgvid.addEventListener('mouseenter', (() => {
+        video.classList.add("video")
+        video.classList.add("img-proj")
+        video.muted = "true" 
+        video.autoplay = "true"
+        video.src = './assets/memory.mov'
+        imgvid.appendChild(video);
+    }))
+}

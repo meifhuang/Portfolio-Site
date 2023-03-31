@@ -130,7 +130,7 @@ li {
 }
 
 .proj-images {
-    height: auto;
+    height: 30em;
     box-shadow: 1px 10px 40px 3px rgba(69, 89, 69, 0.75);
     -webkit-box-shadow: 1px 10px 40px 3px rgba(69, 89, 69, 0.75);
     -moz-box-shadow: 1px 10px 40px 3px rgba(69, 89, 69, 0.75);
@@ -150,6 +150,19 @@ li {
 
 .project-title {
     margin-right: 1em;
+}
+
+.img-proj {
+    display: visible;
+    height: 100%;
+    width: 100%;
+}
+
+
+.video {
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 /* skills */
