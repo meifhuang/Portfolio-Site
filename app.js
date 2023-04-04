@@ -24,19 +24,29 @@ window.addEventListener("scroll", () => {
 })
 
 const imgproj = document.querySelectorAll(".img-proj");
-const imgvidArray = document.querySelectorAll(".imgvid");
+const imgvidArray = document.querySelectorAll(".img-vid");
+const videos = ["./assets/membersonly-vid.mov", "./assets/library-vid.mov", "./assets/memory-vid.mov", "./assets/modura-vid.mov", "./assets/etch-vid.mov"]
 
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < videos.length; i++) {
     const imgvid = imgvidArray[i]; 
     const card_img = imgproj[i] 
     const video = document.createElement('video');
+    const source = document.createElement('source');
     imgvid.addEventListener('mouseenter', (() => {
         video.classList.add("video")
         video.classList.add("img-proj")
+        source.src = videos[i]
+        video.type = 'mov'
         video.muted = "true" 
-        video.autoplay = "true"
-        video.src = './assets/memory.mov'
+        video.appendChild(source);
         imgvid.appendChild(video);
+        video.play(); 
+        card_img.remove(); 
+        video.style.display = 'block';
+    }))
+    imgvid.addEventListener('mouseleave', (()=> {
+        imgvid.removeChild(video);
+        imgvid.append(card_img); 
     }))
 }
