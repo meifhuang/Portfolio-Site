@@ -62,33 +62,30 @@
                 <h2 class="typed-out"> I'm a web developer. </h2>
             </div>
         </div>
-
-        <div class="container col-8 offset-2 sections skills" id="skills">
-            <div class="skills-container row justify-content-center">
-                <h2 class="skills-title text-start mb-3 "> Learning ... </h2>
-                <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png"
-                    alt="">
-                <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"
-                    alt="">
-                <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-                    alt="">
-            </div>
-            <div class="skills-container row justify-content-center">
-                <img class="col-sm-8 col-lg-3 m-1 box" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="">
-                <img class="col-sm-8 col-lg-3 m-1 box" src="./images/styledcomp.png" alt="">
-                <img class="col-sm-8 col-lg-3 m-1 box" src="./images//icons8-express-js-96.png" alt="">
-            </div>
-            <div class="skills-container row justify-content-center">
-                <img class="col-sm-7 col-lg-4 m-1 box me-2"
-                    src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="">
-                <img class="col-sm-7 col-lg-5 m-1 box " src="./images/MongoDB_ForestGreen.png" alt="">
-            </div>
-        </div>
     </div>
+    
 
-    <h2 class="sections project-title text-center offset-6" id="project"> ... and building </h2>
-    <div class="row project d-flex align-items-center justify-content-evenly col-10 offset-1">
-      
+    <h2 class="sections project-title text-center mb-2" id="project"> My Projects </h2>
+    <div class="row project d-flex align-items-center justify-content-evenly col-10 offset-1 mt-2">
+        <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0 ">
+            <div class="img-vid mb-3">
+           <img src="./images/trail-pic.png" class="img-proj"> 
+        </div>
+        <div class="proj-info text-center">
+        <h3> Yelp Trail </h3>
+        <p class="mb-3"> A Yelp-like site that allows authenticated users to add, remove, and update trails. 
+            Users can also leave reviews on other people's trails. </p>
+            <div class="proj-icons d-flex justify-content-center">
+        <a href="https://github.com/meifhuang"> <img class="icons"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
+        </a>
+        <a href="https://github.com/meifhuang"> <img class="icons"
+            src="./images/link.png" alt="n/a">
+        </a>
+        </div>
+        </div>
+        </div>
+        
 
         <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0">
             <div class="img-vid mb-3">
@@ -185,25 +182,47 @@
 </div>
 
 
+<div class="container col-lg-8 offset-lg-2 sections skills" id="skills">
+    <div class="skills-container row justify-content-center">
+        <h2 class="skills-title text-center mb-2"> Built With </h2>
+        <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png"
+            alt="">
+        <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"
+            alt="">
+        <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+            alt="">
+    </div>
+    <div class="skills-container row justify-content-center">
+        <img class="col-sm-8 col-lg-3 m-1 box" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="">
+        <img class="col-sm-8 col-lg-3 m-1 box" src="./images/styledcomp.png" alt="">
+        <img class="col-sm-8 col-lg-3 m-1 box" src="./images//icons8-express-js-96.png" alt="">
+    </div>
+    <div class="skills-container row justify-content-center">
+        <img class="col-sm-7 col-lg-4 m-1 box me-2"
+            src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="">
+        <img class="col-sm-7 col-lg-5 m-1 box " src="./images/MongoDB_ForestGreen.png" alt="">
+    </div>
+</div>
 
 
-    <div class="contact sections col-lg-8 col-md-9 col-sm-10" id="contact">
-        <h2 class="text-center mb-5 mt-5"> connect with me </h2>
+
+    <div class="contact card sections col-lg-6 col-md-8 col-sm-10 mb-5" id="contact">
+        <h2 class="text-center mt-5 mb-4"> connect with me </h2>
         <form>
             <div class="form-group m-3">
-                <label for="name">Name</label>
+                <label for="name" class="m-1">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Name">
             </div>
             <div class="form-group m-3">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1" class="m-1" >Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
             </div>
             <div class="form-group m-3">
-                <label for="exampleFormControlTextarea1">Message</label>
+                <label for="exampleFormControlTextarea1" class="m-1">Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-secondary m-3">Submit</button>
+            <button type="submit" class="btn btn-secondary m-3 mb-5">Submit</button>
         </form>
     </div>
 
@@ -222,8 +241,9 @@
         <!-- <div class="sticky-bottom text-end offset-10"> -->
         <ul class="right-nav text-end align-self-end ">
             <li> <a class="nav-items" href="#home"> &lt;/Home&gt; </a> </li>
-            <li> <a class="nav-items" href="#skills"> Skills </a></li>
+            
             <li> <a class="nav-items" href="#project"> Projects </a></li>
+            <li> <a class="nav-items" href="#skills"> Skills </a></li>
             <li> <a class="nav-items" href="#contact"> Contact </a></li>
         </ul>
 

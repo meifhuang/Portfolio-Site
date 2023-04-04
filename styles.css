@@ -5,9 +5,9 @@
 }
 
 body {
-    background: rgb(208, 235, 226);
-    background: linear-gradient(106deg, rgba(208, 235, 226, 1) 18%, rgba(144, 187, 174, 1) 36%, rgba(173, 214, 201, 1) 59%, rgba(159, 194, 185, 1) 85%);
     font-family: 'Inter', sans-serif;
+    background: rgb(245,208,176);
+background: linear-gradient(32deg, rgba(245,208,176,1) 0%, rgba(193,205,237,1) 23%, rgba(168,202,237,1) 43%, rgba(179,210,235,1) 64%, rgba(172,207,238,1) 83%, rgba(143,173,231,1) 100%);
 }
 
 /* homepage */
@@ -148,7 +148,8 @@ li {
 }
 
 .project-title {
-    margin-right: 1em;
+    font-size: 5rem;
+    margin-bottom: .5em !important; 
 }
 
 .proj-icons > * {
@@ -171,8 +172,8 @@ li {
 
 /* skills */
 
-.skills {
-    margin-top: 5em;
+#skills {
+    margin-top: 10em;
     margin-bottom: 7em;
     min-height: 100vh;
     /* height: 45em; */
@@ -197,30 +198,34 @@ li {
     width: 100%;
 } */
 
+.skills-title {
+    font-size: 5rem;
+}
+
 .box {
     background-color: var(--white);
     /* border: 2px solid black; */
     border-radius: 8px;
     padding: 1em;
-    opacity: .3;
-    transition: 0.1s;
     min-height: 10em;
 }
 
-.box:hover {
-    opacity: 1;
-    transform: scale(1.01);
-    animation: fadeIn 1.5s;
-}
 
 /** animations **/
+
+
+/** form **/ 
+input, textarea {
+    border-bottom: 1px solid black !important;
+}
 
 
 /* contacts me */
 
 .contact {
-    margin-top: 8em;
-    margin-bottom: 6em;
+    margin-top: 12em;
+    margin-bottom: 5em;
+    border: 1px solid black;
 }
 
 
