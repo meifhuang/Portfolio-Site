@@ -17,29 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function() {
-                // https://dashboard.emailjs.com/admin/account
-                emailjs.init(`${EMAIL_JS}`);
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    // generate a five digit number for the contact_number variable
-                    this.contact_number.value = Math.random() * 100000 | 0;
-                    // these IDs from the previous steps
-                    emailjs.sendForm(`${SERVICE_ID}`, `${CONTACT_ID}`, this)
-                        .then(function() {
-                            console.log('SUCCESS!');
-                        }, function(error) {
-                            console.log('FAILED...', error);
-                        });
-                });
-            }
-        </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -50,7 +28,7 @@
 <body>
     <nav class="navbar sticky-top">
         <div class="container-fluid">
-            <a class=" navbar-brand" href=""> MH <div class="navbox">
+            <a class="navbar-brand" href=""> MH <div class="navbox">
                 </div></a>
 
 
@@ -75,185 +53,216 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container ">
         <div class="home-line offset-10"> </div>
         <div class="d-flex min-vh-100 justify-content-center flex-column mb-5 home offset-1 sections" id="home">
             <h2> Hi, my name is </h2>
-            <h1 class="name"> MEI HUANG </h1>
-            
+            <div class="d-flex">
+                <h1 class="name"> M </h1>
+                <h1 class="name"> E </h1>
+                <h1 class="name"> I </h1>
+                <h1 class="name"> &#160; </h1>
+
+                <h1 class="name"> H </h1>
+                <h1 class="name"> U </h1>
+                <h1 class="name"> A </h1>
+                <h1 class="name"> N </h1>
+                <h1 class="name"> G </h1>
+            </div>
             <div class="typing-container">
                 <h2 class="typed-out"> I'm a web developer. </h2>
             </div>
         </div>
     </div>
-    
+    <!-- <h2 class="text-center mt-5"> About Me </h2>
+    <div class="row about sections col-10 offset-2 pt-5 mb-5">
+        <div class="mb-5 d-flex" id="aboutme">
+            <div class="about-box mx-4 col-8"></div>
+            <p class="aboutme-text col-6 align-self-center"> I have always been passionate
+                about
+                teaching and helping others. Throughout my 9 years
+                as a
+                tutor, I have
+                learned just as much from my students as they have from me. As I explored different fields, I discovered
+                that my passion lies in software development. Bringing my ideas to life through code has been a
+                rewarding
+                experience, requiring me to apply my problem-solving skills to overcome obstacles that arise.
+
+                When I'm not coding, I enjoy weightlifting, playing handball, and hiking. These activities help me
+                recharge
+                and refocus, allowing me to take on more challenges in my work. I'm excited to continue honing my skills
+                and
+                expanding my knowledge, as the field is constantly evolving. </p>
+        </div>
+
+    </div> -->
+
 
     <h2 class="sections project-title text-center mb-2" id="project"> My Projects </h2>
     <div class="row project d-flex align-items-center justify-content-evenly col-10 offset-1 mt-2">
         <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0 ">
             <div class="img-vid mb-3">
-           <img src="./images/trail-pic.png" class="img-proj"> 
+                <img src="./images/trail-pic.png" class="img-proj">
+            </div>
+            <div class="proj-info text-center">
+                <h3> Yelp Trail </h3>
+                <p class="mb-3"> A Yelp-like site that allows authenticated users to add, remove, and update trails.
+                    Users can also leave reviews on other people's trails. </p>
+                <div class="proj-icons d-flex justify-content-center">
+                    <a href="https://github.com/meifhuang/Yelp-Trails"> <img class="icons"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
+                    </a>
+                    <a href="https://github.com/meifhuang/Yelp-Trails"> <img class="icons" src="./images/link.png"
+                            alt="n/a">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="proj-info text-center">
-        <h3> Yelp Trail </h3>
-        <p class="mb-3"> A Yelp-like site that allows authenticated users to add, remove, and update trails. 
-            Users can also leave reviews on other people's trails. </p>
-            <div class="proj-icons d-flex justify-content-center">
-        <a href="https://github.com/meifhuang/Yelp-Trails"> <img class="icons"
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
-        </a>
-        <a href="https://github.com/meifhuang/Yelp-Trails"> <img class="icons"
-            src="./images/link.png" alt="n/a">
-        </a>
-        </div>
-        </div>
-        </div>
-        
+
 
         <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0">
             <div class="img-vid mb-3">
-           <img src="./images/membersonly-pic.png" class="img-proj"> 
-        </div>
-        <div class="proj-info text-center">
-        <h3> Members Only </h3>
-        <p class="mb-3"> An application that allows users to post and view messages on the message board. To view who wrote
-            each message will require a secret key. </p>
-            <div class="proj-icons d-flex justify-content-center">
-        <a href="https://github.com/meifhuang/Members-Only"> <img class="icons"
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
-        </a>
-        <a href="https://members-only-nsuw.onrender.com/"> <img class="icons"
-            src="./images/link.png" alt="n/a">
-        </a>
-        </div>
-        </div>
+                <img src="./images/membersonly-pic.png" class="img-proj">
+            </div>
+            <div class="proj-info text-center">
+                <h3> Members Only </h3>
+                <p class="mb-3"> An application that allows users to post and view messages on the message board. To
+                    view who wrote
+                    each message will require a secret key. </p>
+                <div class="proj-icons d-flex justify-content-center">
+                    <a href="https://github.com/meifhuang/Members-Only"> <img class="icons"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
+                    </a>
+                    <a href="https://members-only-nsuw.onrender.com/"> <img class="icons" src="./images/link.png"
+                            alt="n/a">
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0">
             <div class="img-vid mb-3">
-           <img src="./images/library-pic.png" class="img-proj"> 
-        </div>
-        <div class="proj-info text-center">
-        <h3> Library </h3>
-        <p class="mb-3"> A library application that uses Local Storage and Google Authentication to save book
-            information entered by a user. Books can be deleted from the list.  </p>
-            <div class="proj-icons d-flex justify-content-center">
-                <a href="https://github.com/meifhuang/Library"> <img class="icons"
-                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
-            </a>
-            <a href="https://library-d876a.web.app/"> <img class="icons"
-                src="./images/link.png" alt="n/a">
-            </a>
-        </div>
-        </div>
+                <img src="./images/library-pic.png" class="img-proj">
+            </div>
+            <div class="proj-info text-center">
+                <h3> Library </h3>
+                <p class="mb-3"> A library application that uses Local Storage and Google Authentication to save books'
+                    info entered by a user. Books can be deleted from the list. </p>
+                <div class="proj-icons d-flex justify-content-center">
+                    <a href="https://github.com/meifhuang/Library"> <img class="icons"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
+                    </a>
+                    <a href="https://library-d876a.web.app/"> <img class="icons" src="./images/link.png" alt="n/a">
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0">
-             <div class="img-vid mb-3">
-            <img src="./images/memory-pic.png" class="img-proj"> 
-        </div>
+            <div class="img-vid mb-3">
+                <img src="./images/memory-pic.png" class="img-proj">
+            </div>
             <div class="proj-info text-center">
                 <h3> Memory Card Game </h3>
                 <p class="mb-3"> A mini memory game created with React and utilizes the Poke API. Players must
                     select a pokemon that had not previously been selected to score a point. </p>
-                    <div class="proj-icons d-flex justify-content-center">
-                <a href="https://github.com/meifhuang/Memory-Card-Game"> <img class="icons"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
-                </a>
-                <a href="https://memory-card-game-pyv0.onrender.com/"> <img class="icons"
-                    src="./images/link.png" alt="n/a">
-                </a>
-            </div>
+                <div class="proj-icons d-flex justify-content-center">
+                    <a href="https://github.com/meifhuang/Memory-Card-Game"> <img class="icons"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
+                    </a>
+                    <a href="https://memory-card-game-pyv0.onrender.com/"> <img class="icons" src="./images/link.png"
+                            alt="n/a">
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0">
             <div class="img-vid mb-3">
-           <img src="./images/modura-pic.png" class="img-proj"> 
-       </div>
-       <div class="proj-info text-center">
-        <h3> Modura </h3>
-        <p class="mb-3"> A simple shopping site created with React that allows users to add and remove items to the cart. 
-             Checking out will clear the items in the bag. </p>
-            <div class="proj-icons d-flex justify-content-center">
-        <a href="https://github.com/meifhuang/Modura"> <img class="icons"
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
-        </a>
-        <a href="https://modura.onrender.com/"> <img class="icons"
-            src="./images/link.png" alt="n/a">
-        </a>
-    </div>
-    </div>
-</div>
-
-<div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0">
-    <div class="img-vid mb-3">
-   <img src="./images/etch-pic.png" class="img-proj"> 
-</div>
-<div class="proj-info text-center">
-<h3> Etch-A-Sketch </h3>
-<p class="mb-3"> An online version of an Etch-A-Sketch. Users can change their pen mode,
-     pen color, and grid size as well as clear the grid to start over.  </p>
-    <div class="proj-icons d-flex justify-content-center">
-<a href="https://github.com/meifhuang/Etch-A-Sketch"> <img class="icons"
-        src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
-</a>
-<a href="https://meifhuang.github.io/Etch-A-Sketch/"> <img class="icons"
-    src="./images/link.png" alt="n/a">
-</a>
-</div>
-</div>
-</div>
-
-
-<div class="container col-lg-8 offset-lg-2 sections skills" id="skills">
-    <div class="skills-container row justify-content-center">
-        <h2 class="skills-title text-center mb-2"> Built With </h2>
-        <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png"
-            alt="">
-        <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"
-            alt="">
-        <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-            alt="">
-    </div>
-    <div class="skills-container row justify-content-center">
-        <img class="col-sm-8 col-lg-3 m-1 box" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="">
-        <img class="col-sm-8 col-lg-3 m-1 box" src="./images/styledcomp.png" alt="">
-        <img class="col-sm-8 col-lg-3 m-1 box" src="./images//icons8-express-js-96.png" alt="">
-    </div>
-    <div class="skills-container row justify-content-center">
-        <img class="col-sm-7 col-lg-4 m-1 box me-2"
-            src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="">
-        <img class="col-sm-7 col-lg-5 m-1 box " src="./images/MongoDB_ForestGreen.png" alt="">
-    </div>
-</div>
-
-
-
-    <div class="contact card sections col-lg-6 col-md-8 col-sm-10 mb-5" id="contact-form">
-        <h2 class="text-center mt-5 mb-4"> connect with me </h2>
-        <form>
-            <div class="form-group m-3">
-                <label for="name" class="m-1">Name</label>
-                <input type="text" class="form-control" id="name" name="user_name" placeholder="Name">
+                <img src="./images/modura-pic.png" class="img-proj">
             </div>
-            <div class="form-group m-3">
-                <label for="exampleInputEmail1" class="m-1" >Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" name="user_email" aria-describedby="emailHelp"
-                    placeholder="Enter email">
+            <div class="proj-info text-center">
+                <h3> Modura </h3>
+                <p class="mb-3"> A simple shopping site created with React that allows users to add and remove items to
+                    the cart.
+                    Checking out will clear the items in the bag. </p>
+                <div class="proj-icons d-flex justify-content-center">
+                    <a href="https://github.com/meifhuang/Modura"> <img class="icons"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
+                    </a>
+                    <a href="https://modura.onrender.com/"> <img class="icons" src="./images/link.png" alt="n/a">
+                    </a>
+                </div>
             </div>
-            <div class="form-group m-3">
-                <label for="exampleFormControlTextarea1" class="m-1">Message</label>
-                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="card proj-images col-lg-5 col-md-7 col-sm-10 border-0">
+            <div class="img-vid mb-3">
+                <img src="./images/etch-pic.png" class="img-proj">
             </div>
-            <button type="submit" value="Send" class="btn btn-secondary m-3 mb-5">Submit</button>
-        </form>
-    </div>
+            <div class="proj-info text-center">
+                <h3> Etch-A-Sketch </h3>
+                <p class="mb-3"> An online version of an Etch-A-Sketch. Users can change their pen mode,
+                    pen color, and grid size as well as clear the grid to start over. </p>
+                <div class="proj-icons d-flex justify-content-center">
+                    <a href="https://github.com/meifhuang/Etch-A-Sketch"> <img class="icons"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
+                    </a>
+                    <a href="https://meifhuang.github.io/Etch-A-Sketch/"> <img class="icons" src="./images/link.png"
+                            alt="n/a">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col-lg-10 offset-lg-1 sections skills" id="skills">
+            <div class="skills-container row justify-content-center">
+                <h3 class="skills-title text-center mb-2"> Built With </h3>
+                <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png"
+                    alt="">
+                <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"
+                    alt="">
+                <img class="col-sm-8 col-lg-3 m-1 box " src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                    alt="">
+            </div>
+            <div class="skills-container row justify-content-center">
+                <img class="col-sm-8 col-lg-3 m-1 box" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="">
+                <img class="col-sm-8 col-lg-3 m-1 box" src="./images/styledcomp.png" alt="">
+                <img class="col-sm-8 col-lg-3 m-1 box" src="./images//icons8-express-js-96.png" alt="">
+            </div>
+            <div class="skills-container row justify-content-center">
+                <img class="col-sm-7 col-lg-4 m-1 box me-2"
+                    src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="">
+                <img class="col-sm-7 col-lg-5 m-1 box " src="./images/MongoDB_ForestGreen.png" alt="">
+            </div>
+        </div>
+
+        <div class="contact card sections col-lg-6 col-md-8 col-sm-10 mt-5" id="contact-form">
+            <h2 class="text-center mt-5 mb-4" id="contact"> connect with me </h2>
+            <form id="contact-form-email">
+                <div class="form-group m-3">
+
+                    <input type="text" class="form-control" id="name" name="user_name" placeholder="Name" required>
+                </div>
+                <div class="form-group m-3">
+
+                    <input type="email" class="form-control" id="email" name="user_email" aria-describedby="emailHelp"
+                        placeholder="Email" required>
+                </div>
+                <div class="form-group m-3">
+
+                    <textarea name="message" class="form-control" id="message" placeholder="Message" rows="3"
+                        required></textarea>
+                </div>
+                <button id="email-btn" type="submit" value="Send" class="btn btn-secondary m-3 mb-5">Send</button>
+            </form>
+        </div>
 
     </div>
-    <div class="sticky-bottom d-flex justify-content-between">
+    <div class="sticky-bottom d-flex justify-content-between left-navs">
         <ul class="left-nav">
             <div class="icon-line"> </div>
-            <li> <a href=""> <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="n/a">
+            <li> <a href="#contact"> <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png"
+                        alt="n/a">
                 </a> </li>
             <li> <a href="https://www.linkedin.com/in/meifhuang5/"> <img class="icons"
                         src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="n/a"> </a> </li>
@@ -262,18 +271,43 @@
                 </a> </li>
         </ul>
         <!-- <div class="sticky-bottom text-end offset-10"> -->
-        <ul class="right-nav text-end align-self-end ">
+        <ul class="right-nav text-end align-self-end">
             <li> <a class="nav-items" href="#home"> &lt;/Home&gt; </a> </li>
-            
-            <li> <a class="nav-items" href="#project"> Projects </a></li>
-            <li> <a class="nav-items" href="#skills"> Skills </a></li>
-            <li> <a class="nav-items" href="#contact"> Contact </a></li>
+            <!-- <li> <a class="nav-items" href="#aboutme"> About </a></li> -->
+            <li> <a class="nav-items " href="#project"> Projects </a></li>
+            <li> <a class="nav-items " href="#skills"> Skills </a></li>
+            <li> <a class="nav-items " href="#contact-form"> Contact </a></li>
         </ul>
 
     </div>
     </div>
 
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="app.js"> </script>
+<!-- <script type="text/javascript">
+    (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("_GmYj6RU5gGejs_s3");
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function () {
+        console.log(document.getElementById("contact-form-email"))
+        document.getElementById('contact-form-email').addEventListener('submit', function (event) {
+            event.preventDefault();
+            console.log("SUBMITTED")
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_r8cfv3a", "template_fx0iiyv", this)
+                .then(function () {
+                    console.log('SUCCESS!');
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script> -->
 
 </html>
