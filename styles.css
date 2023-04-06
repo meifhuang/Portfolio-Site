@@ -24,10 +24,15 @@ body::-webkit-scrollbar{
 
 h1 {
     font-size: 120px;
+    font-weight: 450;
 }
 
 h2 {
     font-size: 50px;
+}
+
+#project,h3 {
+    font-weight: 400;
 }
 
 .name {
@@ -197,11 +202,11 @@ li {
 }
 
 .proj-images {
-    height: 32rem;
+    height: 33rem;
     box-shadow: 1px 10px 40px 3px rgba(127, 126, 126, 0.75);
     -webkit-box-shadow: 1px 10px 40px 3px rgba(127, 126, 126, 0.75);
     -moz-box-shadow: 1px 10px 40px 3px rgba(127, 126, 126, 0.75);
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     background-color: var(--white);
     padding: 1em !important;
 }
