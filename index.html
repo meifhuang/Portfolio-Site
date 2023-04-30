@@ -8,20 +8,12 @@
     <link rel="icon" type="image/x-icon" href="images/Icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    
     <title>Mei Huang</title>
 </head>
 
@@ -112,7 +104,7 @@
                     <a href="https://github.com/meifhuang/Yelp-Trails"> <img class="icons"
                             src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="n/a">
                     </a>
-                    <a href="https://github.com/meifhuang/Yelp-Trails"> <img class="icons" src="./images/link.png"
+                    <a href="https://yelp-trails.onrender.com/"> <img class="icons" src="./images/link.png"
                             alt="n/a">
                     </a>
                 </div>
@@ -236,8 +228,28 @@
             </div>
         </div>
 
-        <div class="contact card sections col-lg-6 col-md-8 col-sm-10 mt-5" id="contact-form">
-            <h2 class="text-center mt-5 mb-4" id="contact"> connect with me </h2>
+   
+  
+  <!-- Modal -->
+  <div class="modal" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Message sent!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-target="#messageModal" data-bs-toggle="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Thank you for sending me a message! I'll get back to you as soon as I can. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#messageModal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="contact card sections col-lg-6 col-md-8 col-sm-10 mt-5 mb-5" id="contact-form">
+            <h2 class="text-center mt-5 mb-4"> connect with me </h2>
             <form id="contact-form-email">
                 <div class="form-group m-3">
 
@@ -256,8 +268,8 @@
                 <button id="email-btn" type="submit" value="Send" class="btn btn-secondary m-3 mb-5">Send</button>
             </form>
         </div>
-
     </div>
+
     <div class="sticky-bottom d-flex justify-content-between left-navs">
         <ul class="left-nav">
             <div class="icon-line"> </div>
@@ -285,6 +297,15 @@
 </body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="app.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+crossorigin="anonymous"></script>
 <!-- <script type="text/javascript">
     (function () {
         // https://dashboard.emailjs.com/admin/account

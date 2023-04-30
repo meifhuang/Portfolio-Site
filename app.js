@@ -5,7 +5,7 @@ const sections = document.querySelectorAll(".sections");
 window.addEventListener("scroll", () => {
     let currentSection = "";
     sections.forEach(function (section) {
-        const sectionTop = section.offsetTop - 30;
+        const sectionTop = section.offsetTop - 85;
         if (pageYOffset >= sectionTop) {
             currentSection = section.getAttribute('id');
         }
@@ -63,27 +63,32 @@ btn.addEventListener("click", () => {
     console.log("Blicked")
 })
 // console.log(btn)
+var myModal = document.getElementById('messageModal');
 console.log(form)
 console.log(document.querySelectorAll(".skills-icon"))
+
 form.addEventListener("submit", e => {
-    console.log("submitted!")
+    e.preventDefault();
     if (!form.checkValidity()) {
         console.log("invalid")
-        e.preventDefault()
+        e.preventDefault();
         form.classList.add('was-validated')
     }
     else {
-        e.preventDefault()
-        sendEmail()
+        e.preventDefault();
+        myModal.classList.add("show");
+        myModal.style.display = "block";
+        sendEmail();
+        console.log('display');
         form.classList.remove('was-validated')
     }
-
 })
 
-const feedback = document.querySelector(".feedback");
-var myModal = document.getElementById('myModal')
+// const feedback = document.querySelector(".feedback");
+
 var myInput = document.getElementById('myInput')
-console.log(feedback)
+// console.log(feedback)
+console.log(myModal);
 
 function sendEmail() {
     console.log("sent email")
@@ -101,9 +106,7 @@ function sendEmail() {
             document.getElementById("email").value = "",
                 document.getElementById("message").value = "";
             console.log('SUCCESS!', response.status, response.text);
-            feedback.textContent = "Thank you for sending me a message! I look forward to speaking with you."
-            myInput.focus()
-            setTimeout(() => feedback.textContent = "", 5000)
+            
         }, function (error) {
             console.log('FAILED...', error);
         });
