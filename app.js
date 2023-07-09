@@ -25,7 +25,7 @@ window.addEventListener("scroll", () => {
 
 const imgproj = document.querySelectorAll(".img-proj");
 const imgvidArray = document.querySelectorAll(".img-vid");
-const videos = ["./assets/trail-vid.mov", "./assets/membersonly-vid.mov", "./assets/library-vid.mov", "./assets/memory-vid.mov", "./assets/modura-vid.mov", "./assets/etch-vid.mov"]
+const videos = ["./assets/gymsocial-vid.mov","./assets/trail-vid.mov", "./assets/membersonly-vid.mov", "./assets/library-vid.mov", "./assets/memory-vid.mov", "./assets/etch-vid.mov"]
 
 
 for (let i = 0; i < videos.length; i++) {
