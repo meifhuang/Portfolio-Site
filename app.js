@@ -17,7 +17,7 @@ window.addEventListener("scroll", () => {
         link.textContent = link.textContent.replace(/\W/g, "");
     })
 
-    const currentLink = document.querySelector(`a[href="#${currentSection}"]`)
+    const currentLink = document.querySelector(`.right-nav a[href="#${currentSection}"]`)
     currentLink.classList.add('active');
     let content = currentLink.textContent;
     currentLink.textContent = '</' + content + '>'
@@ -25,7 +25,7 @@ window.addEventListener("scroll", () => {
 
 const imgproj = document.querySelectorAll(".img-proj");
 const imgvidArray = document.querySelectorAll(".img-vid");
-const videos = ["./assets/gymsocial-vid.mov","./assets/trail-vid.mov", "./assets/membersonly-vid.mov", "./assets/library-vid.mov", "./assets/memory-vid.mov", "./assets/etch-vid.mov"]
+const videos = ["./assets/gymsocial-vid.mov", "./assets/trail-vid.mov", "./assets/membersonly-vid.mov", "./assets/library-vid.mov", "./assets/memory-vid.mov", "./assets/etch-vid.mov"]
 
 
 for (let i = 0; i < videos.length; i++) {
@@ -106,7 +106,7 @@ function sendEmail() {
             document.getElementById("email").value = "",
                 document.getElementById("message").value = "";
             console.log('SUCCESS!', response.status, response.text);
-            
+
         }, function (error) {
             console.log('FAILED...', error);
         });

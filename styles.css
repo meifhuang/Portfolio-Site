@@ -22,32 +22,44 @@ body::-webkit-scrollbar{
     animation: fadeIn 2s;
 }
 
-h1 {
+/* h1 {
     font-size: 120px;
     font-weight: 450;
 }
 
 h2 {
     font-size: 50px;
-}
+} */
 
 #project,h3 {
     font-weight: 400;
 }
+h2 {
+    font-size: 3.5em;
+}
 
 .name {
     color: var(--white);
+    font-size: 8em;
 }
 
 @media (max-width: 1280px) {
     .name {
         font-size: 7.5em;
     }
+   
 }
 
 @media (max-width: 912px) {
     .name {
         font-size: 5em;
+    }
+    .right-nav {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 2em;
     }
 }
 
@@ -55,7 +67,7 @@ h2 {
     .home > h2, 
     .name,
     .typed-out {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 }
 
@@ -140,24 +152,6 @@ li {
 .navbar-brand:target {
     color: var(--white);
 }
-
-/* if the screen size gets small, just disappear */
-@media (max-width: 912px) {
-    .right-nav {
-        display: none;
-    }
-
-    .skills-title {
-        font-size: 2em;
-    }
-
-    .projects-title {
-        font-size: 2em;
-    }
-
-}
- 
-
 /* icons */
 
 .icon-line {
@@ -177,24 +171,31 @@ li {
 }
 
 /* about me */
-.about {
-    height: 35em;
-}
+
 
 .about-box {
-    height: 30em; 
+    /* height: 15em;  */
     background:rgb(189, 196, 248);
     border-left: 7px solid rgb(71, 90, 128); 
 }
 
-.aboutme-text {
+.linked {
+    border-top-left-radius: 43%;
+    border-bottom-left-radius: 67%;
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 30%;
+    height: 20%; 
+}
+
+
+/* .aboutme-text {
     position: absolute;
     right: 15em;
     background:rgb(255, 255, 255);
     padding: 2.3em; 
     border: 3px solid rgb(71, 90, 128);
     
-}
+} */
 
 /* project section */
 .project {
@@ -220,7 +221,7 @@ li {
     width: 100%;
 }
 
-.project-title {
+.section-title {
     font-size: 5rem;
     margin-bottom: .5em !important; 
 }
@@ -250,9 +251,6 @@ li {
     padding: 7em;
 }
 
-.skills-title {
-    font-size: 5rem;
-}
 
 .box {
     background-color: var(--white);
